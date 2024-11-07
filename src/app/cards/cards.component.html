@@ -1,0 +1,19 @@
+<section>
+
+
+<div class="product-list">
+    <h2>Featured Collection</h2>
+    <ul>
+        <li *ngFor="let product of products">
+            <img src="{{product.image}}" alt="">
+            <h3>{{product.name}}</h3>
+            <p>{{product.description}}</p>
+            <p>{{product.price | currency: 'BRL'}}</p>
+            <div class="center">
+            <p class="bot">Buy Now</p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+</section>
